@@ -98,7 +98,7 @@ const Hero = () => {
               variants={itemVariants}
               className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0"
             >
-              Frontend Developer with a passion for creating intuitive interfaces 
+              Software Engineer with a passion for creating intuitive interfaces 
               and solving real-world problems through code. Ready to bring your 
               ideas to life.
             </motion.p>

@@ -49,10 +49,11 @@ const Footer = () => {
             className="text-center md:text-left"
           >
             <a href="#" className="text-2xl font-bold inline-block">
-              Vikas<span className="text-accent">.</span>
+              Vikas Kumar
+              {/* <span className="text-accent">.</span> */}
             </a>
             <p className="text-primary-foreground/70 text-sm mt-2 max-w-xs">
-              Frontend Developer | Building the web, one component at a time.
+             Software Engineer | Building the web, one component at a time.
             </p>
           </motion.div>
 
