@@ -3,6 +3,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Code2, Lightbulb, Target, Zap, Download } from "lucide-react";
 import vikasImg from "../assets/vikas_img.jpg";
+import resumePdf from "../assets/Vikas_Resume.pdf";
 
 const highlights = [
   {
@@ -108,7 +109,8 @@ const About = () => {
                   <p className="text-muted-foreground">Software Engineer</p>
                   
                   <motion.a
-                    href="#"
+                    href={resumePdf}
+                    download="Vikas_Kumar_Resume.pdf"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     className="inline-flex items-center gap-2 mt-4 px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-medium hover:bg-accent hover:text-white transition-colors"
