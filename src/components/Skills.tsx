@@ -13,7 +13,8 @@ import {
   GitBranch,
   Globe,
   Lightbulb,
-  Layout
+  Layout,
+  Terminal
 } from "lucide-react";
 
 const skillCategories = [
@@ -25,8 +26,8 @@ const skillCategories = [
       { name: "HTML5", level: 95, icon: FileCode2 },
       { name: "CSS3", level: 90, icon: Palette },
       { name: "JavaScript", level: 88, icon: Sparkles },
-      { name: "React", level: 85, icon: Boxes },
-      { name: "Angular", level: 75, icon: Layout },
+      { name: "React", level: 75, icon: Boxes },
+      { name: "Angular", level: 85, icon: Layout },
       { name: "TypeScript", level: 70, icon: Code },
     ],
   },
@@ -37,21 +38,21 @@ const skillCategories = [
     skills: [
       { name: "Tailwind CSS", level: 90, icon: Sparkles },
       { name: "Bootstrap", level: 85, icon: Layout },
-      { name: "SCSS/SASS", level: 80, icon: Palette },
+      // { name: "SCSS/SASS", level: 80, icon: Palette },
       { name: "Responsive Design", level: 92, icon: Globe },
     ],
   },
-  {
-    title: "Backend (Basics)",
-    icon: Server,
-    color: "from-green-500 to-emerald-500",
-    skills: [
-      { name: "Node.js", level: 65, icon: Server },
-      { name: "Express.js", level: 60, icon: Boxes },
-      { name: "MongoDB", level: 55, icon: Database },
-      { name: "REST APIs", level: 75, icon: Globe },
-    ],
-  },
+  // {
+  //   title: "Backend (Basics)",
+  //   icon: Server,
+  //   color: "from-green-500 to-emerald-500",
+  //   skills: [
+  //     { name: "Node.js", level: 65, icon: Server },
+  //     { name: "Express.js", level: 60, icon: Boxes },
+  //     { name: "MongoDB", level: 55, icon: Database },
+  //     { name: "REST APIs", level: 75, icon: Globe },
+  //   ],
+  // },
   {
     title: "Tools & Others",
     icon: Wrench,
@@ -61,6 +62,7 @@ const skillCategories = [
       { name: "VS Code", level: 95, icon: Code },
       { name: "Figma", level: 60, icon: Palette },
       { name: "Problem Solving", level: 85, icon: Lightbulb },
+      { name: "ApiDog", level: 75, icon: Server },
     ],
   },
 ];
