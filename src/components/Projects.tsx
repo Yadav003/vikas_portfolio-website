@@ -1,29 +1,51 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { ExternalLink, Github, Bus, ShoppingCart, Music, Calculator, Shield, Gamepad2, X, ChevronRight } from "lucide-react";
+import { ExternalLink, Github, Bus, Music, Gamepad2, Landmark, Video, X, ChevronRight } from "lucide-react";
 
 const projects = [
   {
-    title: "Government Bus Pass Web App",
-    description: "A complete multi-step form application for government bus pass applications with fare calculation, document upload, and payment integration.",
+    title: "EbusPass",
+    description: "A complete multi-step bus pass application with fare calculation, document upload, and a smooth end-to-end submission flow.",
     problem: "Citizens needed an easier way to apply for bus passes without visiting offices.",
     icon: Bus,
-    tech: ["React", "Tailwind CSS", "Node.js", "MongoDB"],
+    tech: ["React", "TypeScript", "Tailwind CSS"],
     features: ["Multi-step form wizard", "Fare calculation logic", "Document upload", "Payment flow integration", "Form validation"],
     color: "from-blue-500 to-blue-600",
-    demo: "#",
+    demo: "https://ebuspass-connect.vercel.app/",
     github: "#",
   },
   {
-    title: "Mini E-Commerce Platform",
-    description: "A full-featured e-commerce platform with product management, smart search, and shopping cart functionality.",
-    problem: "Small businesses needed an affordable, easy-to-use online store solution.",
-    icon: ShoppingCart,
-    tech: ["React", "Express.js", "MongoDB", "Tailwind CSS"],
-    features: ["Product submission portal", "Smart search & filters", "Shopping cart", "Responsive design", "API integration"],
-    color: "from-emerald-500 to-teal-500",
-    demo: "#",
+    title: "OvalPlay",
+    description: "A live gaming website featuring multiple browser games with a clean, modern UI.",
+    problem: "Create a single destination where users can quickly discover and play games online.",
+    icon: Gamepad2,
+    tech: ["React", "TypeScript"],
+    features: ["Multiple games in one place", "Fast navigation", "Mobile-friendly layout", "Clean UI/UX"],
+    color: "from-fuchsia-500 to-purple-600",
+    demo: "https://www.ovalplay.com/",
+    github: "#",
+  },
+  {
+    title: "Tokimoby",
+    description: "A short-video platform focused on fast, scrollable content with a smooth, modern UI.",
+    problem: "Deliver a lightweight and engaging short-video experience on the web.",
+    icon: Video,
+    tech: ["React", "TypeScript"],
+    features: ["Short-video feed", "Smooth browsing experience", "Responsive UI", "Modern design"],
+    color: "from-amber-500 to-orange-600",
+    demo: "https://www.tokimoby.com/",
+    github: "#",
+  },
+  {
+    title: "HPRCA Job Vacancy Portal (HP Govt)",
+    description: "A government website for Himachal Pradesh job vacancies and recruitment-related updates.",
+    problem: "Provide an official, centralized portal for vacancy notifications and related information.",
+    icon: Landmark,
+    tech: ["Angular", "TypeScript"],
+    features: ["Vacancy listings", "Official notifications", "User-friendly navigation", "Responsive design"],
+    color: "from-cyan-500 to-blue-600",
+    demo: "https://hprca.hp.gov.in/",
     github: "#",
   },
   {
@@ -31,44 +53,11 @@ const projects = [
     description: "A pixel-perfect UI clone of Spotify focusing on frontend design patterns and modern UI/UX principles.",
     problem: "Learning project to master complex UI layouts and state management.",
     icon: Music,
-    tech: ["React", "CSS3", "JavaScript", "HTML5"],
+    tech: ["CSS3", "JavaScript", "HTML5"],
     features: ["Music player UI", "Playlist management", "Responsive layout", "Dark theme", "Smooth animations"],
     color: "from-green-500 to-green-600",
     demo: "#",
-    github: "#",
-  },
-  {
-    title: "Calculator App",
-    description: "A fully functional calculator with clean UI and support for basic and advanced mathematical operations.",
-    problem: "Building fundamental JavaScript logic and state management skills.",
-    icon: Calculator,
-    tech: ["JavaScript", "HTML5", "CSS3"],
-    features: ["Basic operations", "Keyboard support", "Calculation history", "Clean minimal UI"],
-    color: "from-purple-500 to-indigo-500",
-    demo: "#",
-    github: "#",
-  },
-  {
-    title: "Captcha Generator",
-    description: "A security-focused captcha generation tool with randomized patterns and validation logic.",
-    problem: "Websites need spam protection without relying on third-party services.",
-    icon: Shield,
-    tech: ["JavaScript", "Canvas API", "HTML5", "CSS3"],
-    features: ["Random generation", "Custom patterns", "Validation logic", "Refresh functionality"],
-    color: "from-orange-500 to-red-500",
-    demo: "#",
-    github: "#",
-  },
-  {
-    title: "Maze Game",
-    description: "An interactive maze game built with pure JavaScript, showcasing algorithmic thinking and game logic.",
-    problem: "A fun project to demonstrate problem-solving and algorithmic skills.",
-    icon: Gamepad2,
-    tech: ["JavaScript", "HTML5 Canvas", "CSS3"],
-    features: ["Procedural maze generation", "Collision detection", "Timer & scoring", "Multiple difficulty levels"],
-    color: "from-pink-500 to-rose-500",
-    demo: "#",
-    github: "#",
+    github: "https://github.com/Yadav003/Spotify-Clone-",
   },
 ];
 
@@ -285,24 +274,40 @@ const Projects = () => {
 
                 {/* Actions */}
                 <div className="flex gap-4">
-                  <motion.a
-                    href={selectedProject.demo}
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    className={`flex-1 flex items-center justify-center gap-2 py-3 text-white font-medium rounded-lg bg-gradient-to-r ${selectedProject.color} hover:shadow-lg transition-shadow`}
-                  >
-                    <ExternalLink size={18} />
-                    Live Demo
-                  </motion.a>
-                  <motion.a
-                    href={selectedProject.github}
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    className="flex-1 flex items-center justify-center gap-2 py-3 border-2 border-border text-foreground font-medium rounded-lg hover:bg-muted transition-colors"
-                  >
-                    <Github size={18} />
-                    Source Code
-                  </motion.a>
+                  {selectedProject.demo && selectedProject.demo !== "#" && (
+                    <motion.a
+                      href={selectedProject.demo}
+                      target="_blank"
+                      rel="noreferrer"
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                      className={`flex-1 flex items-center justify-center gap-2 py-3 text-white font-medium rounded-lg bg-gradient-to-r ${selectedProject.color} hover:shadow-lg transition-shadow`}
+                    >
+                      <ExternalLink size={18} />
+                      Live Demo
+                    </motion.a>
+                  )}
+
+                  {selectedProject.github && selectedProject.github !== "#" && (
+                    <motion.a
+                      href={selectedProject.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                      className="flex-1 flex items-center justify-center gap-2 py-3 border-2 border-border text-foreground font-medium rounded-lg hover:bg-muted transition-colors"
+                    >
+                      <Github size={18} />
+                      Source Code
+                    </motion.a>
+                  )}
+
+                  {(!selectedProject.demo || selectedProject.demo === "#") &&
+                    (!selectedProject.github || selectedProject.github === "#") && (
+                    <div className="flex-1 py-3 text-center text-sm text-muted-foreground">
+                      Links coming soon.
+                    </div>
+                  )}
                 </div>
               </div>
             </motion.div>
