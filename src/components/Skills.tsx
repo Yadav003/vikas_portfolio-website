@@ -42,17 +42,17 @@ const skillCategories = [
       { name: "Responsive Design", level: 92, icon: Globe },
     ],
   },
-  // {
-  //   title: "Backend (Basics)",
-  //   icon: Server,
-  //   color: "from-green-500 to-emerald-500",
-  //   skills: [
-  //     { name: "Node.js", level: 65, icon: Server },
-  //     { name: "Express.js", level: 60, icon: Boxes },
-  //     { name: "MongoDB", level: 55, icon: Database },
-  //     { name: "REST APIs", level: 75, icon: Globe },
-  //   ],
-  // },
+  {
+    title: "Backend (Basics)",
+    icon: Server,
+    color: "from-green-500 to-emerald-500",
+    skills: [
+      { name: "Node.js", level: 65, icon: Server },
+      { name: "Express.js", level: 60, icon: Boxes },
+      { name: "MongoDB", level: 55, icon: Database },
+      { name: "REST APIs", level: 75, icon: Globe },
+    ],
+  },
   {
     title: "Tools & Others",
     icon: Wrench,

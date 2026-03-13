@@ -19,7 +19,7 @@ const experiences = [
     icon: Briefcase,
     title: "Software Engineer",
     organization: "Embryo Software Solutions",
-    period: "May 2025 - Dec 2025",
+    period: "Apr 2025 - Jan 2026",
     description: "Developed multiple web applications including government portals, and interactive tools. Worked with cross-functional requirements and delivered production-ready code.",
     highlights: ["React & Angular Development", "API Integration", "Responsive Design"],
     color: "from-purple-500 to-pink-500",
