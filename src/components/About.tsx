@@ -3,7 +3,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Code2, Lightbulb, Target, Zap, Download } from "lucide-react";
 import vikasImg from "../assets/vikas_img.jpg";
-import resumePdf from "../assets/Vikas_Kumar_Resume.pdf";
+import resumePdf from "../assets/Vikas_Kumar_Resume (1).pdf";
 
 const highlights = [
   {
