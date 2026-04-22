@@ -49,8 +49,9 @@ const skillCategories = [
     skills: [
       { name: "Node.js", level: 65, icon: Server },
       { name: "Express.js", level: 60, icon: Boxes },
-      { name: "MongoDB", level: 55, icon: Database },
+      { name: "MongoDB", level: 75, icon: Database },
       { name: "REST APIs", level: 75, icon: Globe },
+      { name: "Dot Net Basics", level: 58, icon: Terminal },
     ],
   },
   {

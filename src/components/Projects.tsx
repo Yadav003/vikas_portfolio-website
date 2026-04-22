@@ -16,14 +16,14 @@ const projects = [
     github: "#",
   },
   {
-    title: "OvalPlay",
+    title: "PlayVerse",
     description: "A live gaming website featuring multiple browser games with a clean, modern UI.",
     problem: "Create a single destination where users can quickly discover and play games online.",
     icon: Gamepad2,
     tech: ["React", "TypeScript"],
     features: ["Multiple games in one place", "Fast navigation", "Mobile-friendly layout", "Clean UI/UX"],
     color: "from-fuchsia-500 to-purple-600",
-    demo: "https://www.ovalplay.com/",
+    demo: "https://playverseco.netlify.app/",
     github: "#",
   },
   {
