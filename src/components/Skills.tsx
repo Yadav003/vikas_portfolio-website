@@ -19,6 +19,18 @@ import {
 
 const skillCategories = [
   {
+    title: "Programming Languages",
+    icon: Code,
+    color: "from-purple-500 to-pink-500",
+    skills: [
+      { name: "JavaScript", level: 88, icon: Sparkles },
+      { name: "TypeScript", level: 70, icon: Code },
+      { name: "C#", level: 68, icon: Terminal },
+      { name: "C++", level: 60, icon: FileCode2 },
+      { name: "SQL", level: 75, icon: Database },
+    ],
+  },
+  {
     title: "Frontend",
     icon: Code,
     color: "from-blue-500 to-cyan-500",
@@ -28,22 +40,22 @@ const skillCategories = [
       { name: "JavaScript", level: 88, icon: Sparkles },
       { name: "React", level: 75, icon: Boxes },
       { name: "Angular", level: 85, icon: Layout },
-      { name: "TypeScript", level: 70, icon: Code },
     ],
   },
+  // {
+  //   title: "Styling",
+  //   icon: Palette,
+  //   color: "from-purple-500 to-pink-500",
+  //   skills: [
+  //     { name: "Tailwind CSS", level: 90, icon: Sparkles },
+  //     { name: "Bootstrap", level: 85, icon: Layout },
+  //     // { name: "SCSS/SASS", level: 80, icon: Palette },
+  //     { name: "Responsive Design", level: 92, icon: Globe },
+  //     { name: "CSS Modules", level: 75, icon: Boxes },
+  //   ],
+  // },
   {
-    title: "Styling",
-    icon: Palette,
-    color: "from-purple-500 to-pink-500",
-    skills: [
-      { name: "Tailwind CSS", level: 90, icon: Sparkles },
-      { name: "Bootstrap", level: 85, icon: Layout },
-      // { name: "SCSS/SASS", level: 80, icon: Palette },
-      { name: "Responsive Design", level: 92, icon: Globe },
-    ],
-  },
-  {
-    title: "Backend (Basics)",
+    title: "Backend",
     icon: Server,
     color: "from-green-500 to-emerald-500",
     skills: [
@@ -51,7 +63,8 @@ const skillCategories = [
       { name: "Express.js", level: 60, icon: Boxes },
       { name: "MongoDB", level: 75, icon: Database },
       { name: "REST APIs", level: 75, icon: Globe },
-      { name: "Dot Net Basics", level: 58, icon: Terminal },
+      { name: "Dot Net ", level: 68, icon: Terminal },
+      { name: "Dot Net Core", level: 58, icon: Boxes },
     ],
   },
   {
@@ -62,8 +75,9 @@ const skillCategories = [
       { name: "Git & GitHub", level: 85, icon: GitBranch },
       { name: "VS Code", level: 95, icon: Code },
       { name: "Figma", level: 60, icon: Palette },
-      { name: "Problem Solving", level: 85, icon: Lightbulb },
-      { name: "ApiDog", level: 75, icon: Server },
+      { name: "ApiDog", level: 75, icon: Lightbulb },
+      { name: "Postman", level: 80, icon: Server },
+      { name: "Linux", level: 50, icon: Boxes },
     ],
   },
 ];
